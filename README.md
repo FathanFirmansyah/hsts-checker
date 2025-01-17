@@ -1,2 +1,2 @@
 # hsts-checker
-HSTS Checker by SOC - Tools for check implementation HSTS in many domain.
+HSTS Checker by SOC - Tools untuk memeriksa implementasi HSTS pada berbagai domain.
