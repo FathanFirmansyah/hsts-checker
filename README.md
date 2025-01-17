@@ -18,9 +18,7 @@
   - [Combining Arguments and File](#combining-arguments-and-file)
   - [Saving Results to CSV](#saving-results-to-csv)
 - [Examples](#examples)
-- [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Overview
 
@@ -57,3 +55,175 @@ Pertama, clone repository ini ke direktori lokal Anda:
 
 ```bash
 git clone https://github.com/FathanFirmansyah/hsts-checker.git
+```
+
+### 2. Navigasi ke Direktori
+
+Masuk ke direktori proyek:
+
+```bash
+cd hsts-checker
+```
+
+### 3. Install Dependencies
+
+Instal dependensi yang diperlukan menggunakan pip:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Berikan Izin Eksekusi
+
+Pastikan skrip memiliki izin eksekusi:
+
+```bash
+chmod +x hsts_checker
+```
+
+### 5. Pindahkan ke Direktori yang Ada di PATH
+
+Untuk menjalankan tools dari mana saja, pindahkan skrip ke /usr/local/bin/:
+
+```bash
+sudo mv hsts_checker /usr/local/bin/hsts_checker
+```
+
+## Usage
+
+Setelah instalasi selesai, Anda dapat menggunakan HSTS Checker by SOC melalui terminal.
+
+### Basic Usage
+
+Memeriksa satu atau lebih domain secara langsung:
+
+```bash
+hsts_checker domain1.com domain2.com domain3.com
+```
+
+### Using a File
+
+Memeriksa domain yang terdaftar dalam file, satu domain per baris:
+
+```bash
+hsts_checker -f domains.txt
+```
+
+### Combining Arguments and File
+
+Anda juga dapat menggabungkan input dari argumen dan file:
+
+```bash
+hsts_checker domain1.com -f domains.txt
+```
+
+### Saving Results to CSV
+
+Menyimpan hasil pengecekan ke file CSV untuk analisis lebih lanjut:
+
+```bash
+hsts_checker domain1.com domain2.com -o results.csv
+```
+
+## Examples
+
+### 1. Memeriksa Beberapa Domain Langsung
+
+```bash
+hsts_checker google.com example.com github.com
+```
+
+- Output:
+
+```bash
+========================================
+          HSTS CHECKER by SOC
+========================================
+
+Hasil Pengecekan HSTS:
+
+google.com: Yes
+example.com: No
+github.com: Yes
+```
+
+### 2. Memeriksa Domain dari File
+
+Buat file domains.txt dengan isi:
+
+```bash
+google.com
+example.com
+github.com
+```
+
+Kemudian jalankan:
+
+```bash
+hsts_checker -f domains.txt
+```
+
+- Output:
+
+```bash
+========================================
+          HSTS CHECKER by SOC
+========================================
+
+Hasil Pengecekan HSTS:
+
+google.com: Yes
+example.com: No
+github.com: Yes
+```
+
+### 3. Menggabungkan Argumen dan File
+
+```bash
+hsts_checker yahoo.com -f domains.txt
+```
+
+- Output:
+```bash
+========================================
+          HSTS CHECKER by SOC
+========================================
+
+Hasil Pengecekan HSTS:
+
+yahoo.com: Yes
+google.com: Yes
+example.com: No
+github.com: Yes
+```
+
+### 4. Menyimpan Hasil ke File CSV
+```bash
+hsts_checker google.com example.com -o hasil.csv
+```
+- Output di Terminal:
+
+```bash
+========================================
+          HSTS CHECKER by SOC
+========================================
+
+Hasil Pengecekan HSTS:
+
+google.com: Yes
+example.com: No
+
+Hasil telah disimpan ke hasil.csv
+```
+
+Isi hasil.csv:
+
+```bash
+domain,HSTS,Header
+google.com,Yes,max-age=31536000; includeSubDomains; preload
+example.com,No,
+```
+
+## License
+
+This project is licensed under the MIT License.
