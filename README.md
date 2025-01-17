@@ -1,6 +1,5 @@
 # HSTS Checker by SOC
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)
 ![GitHub Issues](https://img.shields.io/github/issues/FathanFirmansyah/hsts-checker)
 ![GitHub Forks](https://img.shields.io/github/forks/FathanFirmansyah/hsts-checker)
@@ -18,7 +17,6 @@
   - [Combining Arguments and File](#combining-arguments-and-file)
   - [Saving Results to CSV](#saving-results-to-csv)
 - [Examples](#examples)
-- [License](#license)
 
 ## Overview
 
@@ -223,7 +221,3 @@ domain,HSTS,Header
 google.com,Yes,max-age=31536000; includeSubDomains; preload
 example.com,No,
 ```
-
-## License
-
-This project is licensed under the MIT License.
