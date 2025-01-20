@@ -1,4 +1,4 @@
-# HSTS Checker by SOC
+# HSTS Checker 
 
 ![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)
 ![GitHub Issues](https://img.shields.io/github/issues/FathanFirmansyah/hsts-checker)
@@ -20,9 +20,9 @@
 
 ## Overview
 
-**HSTS Checker by SOC** adalah sebuah tools command-line yang memungkinkan Anda untuk memeriksa apakah satu atau lebih website menerapkan **HTTP Strict Transport Security (HSTS)**. HSTS adalah kebijakan keamanan web yang membantu melindungi website dari serangan man-in-the-middle dengan memaksa penggunaan HTTPS.
+**HSTS Checker** adalah sebuah tools command-line yang memungkinkan Anda untuk memeriksa apakah satu atau lebih website menerapkan **HTTP Strict Transport Security (HSTS)**. HSTS adalah kebijakan keamanan web yang membantu melindungi website dari serangan man-in-the-middle dengan memaksa penggunaan HTTPS.
 
-Dengan **HSTS Checker by SOC**, Anda dapat:
+Dengan **HSTS Checker**, Anda dapat:
 
 - Memeriksa banyak domain sekaligus.
 - Menggunakan input domain langsung atau melalui file.
@@ -39,7 +39,7 @@ Dengan **HSTS Checker by SOC**, Anda dapat:
 
 ## Prerequisites
 
-Sebelum menginstal **HSTS Checker by SOC**, pastikan Anda memenuhi persyaratan berikut:
+Sebelum menginstal **HSTS Checker**, pastikan Anda memenuhi persyaratan berikut:
 
 - **Operating System**: Kali Linux atau distribusi Linux lainnya.
 - **Python**: Python 3.6 atau lebih baru.
@@ -89,7 +89,7 @@ sudo mv hsts_checker /usr/local/bin/hsts_checker
 
 ## Usage
 
-Setelah instalasi selesai, Anda dapat menggunakan HSTS Checker by SOC melalui terminal.
+Setelah instalasi selesai, Anda dapat menggunakan HSTS Checker  melalui terminal.
 
 ### Basic Usage
 
@@ -135,7 +135,7 @@ hsts_checker google.com example.com github.com
 
 ```bash
 ========================================
-          HSTS CHECKER by SOC
+          HSTS CHECKER 
 ========================================
 
 Hasil Pengecekan HSTS:
@@ -165,7 +165,7 @@ hsts_checker -f domains.txt
 
 ```bash
 ========================================
-          HSTS CHECKER by SOC
+          HSTS CHECKER 
 ========================================
 
 Hasil Pengecekan HSTS:
@@ -184,7 +184,7 @@ hsts_checker yahoo.com -f domains.txt
 - Output:
 ```bash
 ========================================
-          HSTS CHECKER by SOC
+          HSTS CHECKER 
 ========================================
 
 Hasil Pengecekan HSTS:
@@ -203,7 +203,7 @@ hsts_checker google.com example.com -o hasil.csv
 
 ```bash
 ========================================
-          HSTS CHECKER by SOC
+          HSTS CHECKER 
 ========================================
 
 Hasil Pengecekan HSTS:
