@@ -32,14 +32,14 @@ def tampilkan_header():
     init(autoreset=True)  # Inisialisasi colorama
     header = f"""
 {Fore.CYAN}========================================
-          HSTS CHECKER by SOC
+          HSTS CHECKER
 ========================================{Style.RESET_ALL}
 """
     print(header)
 
 def parse_arguments():
     parser = argparse.ArgumentParser(
-        description="HSTS Checker by SOC - Memeriksa apakah website menggunakan HSTS."
+        description="HSTS Checker - Memeriksa apakah website menggunakan HSTS."
     )
     parser.add_argument(
         'domains',
